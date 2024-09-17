@@ -1,0 +1,408 @@
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+ a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+}
+[class*="col-"]{
+    width: 100%;
+
+}
+.navbar{ 
+    background-color: #0c6168 ;
+    padding: 1% 7%;
+    text-align: center;
+
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.navbar h1{
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+}
+
+
+.navbar-menu{
+    padding: 20px;
+ display: flex;
+ flex-direction: column;
+ text-transform: uppercase;
+}
+.navbar-menu a{
+    background-color: #40868b;
+    border-radius: 10px;
+    margin: 7px;
+    padding: 10px;
+}
+.navbar-menu a:hover{
+background-color: gray;
+}
+.propile p{
+    font-size: 1.2rem;
+    text-align:justify ;
+}
+.propile{
+    padding: 110px 10px;
+    position: relative;
+    text-align: center;
+}
+.propile .top{
+    position: absolute;
+    right: 60px;
+    top: 3px;
+    transition: 2s;
+}
+.propile .bottom{
+    position: absolute;
+    left: 60px;
+    transition: 2s;
+    top: 250px;
+    }
+    .propile .top:hover{
+        transform: rotate(360deg);
+    }
+    .propile .bottom:hover{
+        transform: rotate(360deg);]
+    }
+    .desc h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+   .desc p{
+    color: gray;
+    text-align: center;
+    width: 90%;
+   } 
+
+.propile::after{
+    display: table;
+    clear: both;
+    content:'' ;
+
+}
+.about-me h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.about-me{
+    background-color: #39a4ac;
+    padding: 1% 7%;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about-me::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.aboutme-image img{
+border: 5px solid white;
+border-radius: 50%;
+height: 220px;
+width: 200px;
+
+}
+
+    .about-me p{
+    font-size: 1.2rem;
+    text-align: center;
+   margin: 10px 0;
+}
+.dotted-hr{
+    border: dotted 6px;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 70px;
+}
+.cv-button{
+    background-color: #365f60;
+    color:white;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.about-me::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.pro-ex{
+    padding: 1% 0;
+    font-size: 1.3rem;
+    
+   
+}
+.card-title h2{
+    text-align: center;
+    margin: 15px 0px;
+    background-color: lightblue;
+    padding: 10px;
+}
+.pro-ex .card{
+    background-color: rgb(17, 190, 247);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    
+}
+.pro-ex .card:hover{
+    box-shadow: 0 4px 8px 5px;
+}
+
+.card-icon{
+    text-align: center;
+    
+}
+.card-icon img{
+    margin-top: 20px;
+    
+}
+.rounded-image{
+    border: 5px solid white;
+    border-radius: 50px;
+    
+
+}
+
+
+.skill-container{
+    padding: 25px;
+    
+}
+.skill-container li {
+    list-style: none;
+    margin: 30px 10px;
+    font-weight: bold;
+    position: relative;
+}
+
+.skill-container li::before{
+   content:'' ;
+   position: absolute;
+   background-color: lightblue;
+   top:calc(100% + 5px);
+   width:100% ;
+   height: 10px ;
+   border-radius: 1000px;
+}
+.skill-container li::after{
+    content:'' ;
+    position: absolute;
+    background-color: royalblue;
+    top:calc(100% + 5px);
+    width:0 ;
+    height: 10px ;
+    left: 0;
+    border-radius: 1000px;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+ }
+ .skill-container li.html::after{
+    animation-name: html;
+ }
+ @keyframes html{
+    to{
+        width: 90%;
+    }
+ }
+
+ .skill-container li.css::after{
+    animation-name: css;
+ }
+ @keyframes css{
+    to{
+        width: 80%;
+    }
+ }
+ .skill-container li.javascript::after{
+    animation-name: java;
+ }
+ @keyframes java{
+    to{
+        width: 70%;
+    }
+ }
+
+ .skill-container li.jquery::after{
+    animation-name: jq;
+ }
+ @keyframes jq{
+    to{
+        width: 60%;
+    }
+ }
+ .skill-container li.nodejs::after{
+    animation-name: nj;
+ }
+ @keyframes nj{
+    to{
+        width: 60%;
+    }
+ }
+
+ .skill-container li.expressjs::after{
+    animation-name: ej;
+ }
+ @keyframes ej{
+    to{
+        width: 50%;
+    }
+ }
+ .skill-container li.github::after{
+    animation-name: github;
+ }
+ @keyframes github{
+    to{
+        width: 40%;
+    }
+ }
+ .skill-container li.reactjs::after{
+    animation-name: rjs;
+ }
+ @keyframes rjs{
+    to{
+        width: 30%;
+    }
+ }
+ .skill-container li.bootstrap::after{
+    animation-name: bt;
+ }
+ @keyframes bt{
+    to{
+        width: 20%;
+    }
+ }
+
+.pro-ex::after{
+    display: table;
+    clear: both;
+    content:'';
+}
+.achievement-contact{
+    padding: 1% 7%;
+    background-color: #39a4ac;
+    color: white;
+    margin-right: 15px;
+}
+.achievement-contact h2{
+    text-align: center;
+}
+.contact{
+    text-align: center;
+
+}
+.contact input, textarea{
+width: 100%;
+padding: 10px;
+font-size: 1rem;
+text-align: center;
+border: none;
+border-radius: 5px;
+resize: none;
+}
+.contact button{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #365f60;
+    color: white;
+    margin: 10px;
+    width: 70px;
+}
+.contact-links{
+    text-align: center;
+}
+.media-button .btn{
+ border: none;
+ border-radius: 25px;
+ cursor: pointer;
+ font-size: 32px;
+ padding: 5px;
+ margin: 10px;
+ width: 50px;
+}
+.media-button .bu{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+   }
+   .media-button .bt{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+   }
+   .media-button .btt{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+   }
+   .media-button .bto{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+   }
+   .media-button .btnn{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+   }
+
+
+.achievement-contact::after{
+    display: table;
+    clear: both;
+    content:'';
+    }
+    .footer{
+       background-color: black; 
+       color: white;
+       margin-right: 16px;
+       text-align: center;
+       font-size: 1.2rem;
+       padding: 8px;
+    }
+    .footer::after{
+        display: table;
+        clear: both;
+        content:'';
+        }
